@@ -57,7 +57,7 @@ button {
  
 
  .container {
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px; 
@@ -68,10 +68,10 @@ button {
 
 
   .header {
-   
-    
+    border-bottom: 1px solid #E7E9FC;
   }
   .header-logo{
+     display: flex;
       font-family: 'Raleway';
       font-weight: 800;
       font-size: 18px;
@@ -99,11 +99,12 @@ button {
   color:var(--focus-hover-color);
   }
   .header-nav {
+    margin-left : 76px;
   }
   
   .header-list {
     display: flex;
-    margin-left : 76px;
+    
   }
   .header-item {
     margin-right: 40px;
@@ -125,8 +126,11 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   }
-  
 
+  .current {
+    color: var(--focus-hover-color);
+ }
+  
 
   .contacts-list
   {
@@ -168,9 +172,9 @@ button {
    .header-flex {
     display: flex;
     align-items: center;
-
  }
-  
+
+
   /*------------------ HERO --------------------*/
   
   .hero {
@@ -313,12 +317,11 @@ margin: auto;
   
   .team {
       background-color: #F4F4FD;
-      padding-top: 232px;
+      padding-top: 120px;
       padding-bottom: 120px;
   }
   .our-team {
       font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -327,6 +330,7 @@ margin: auto;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2E2F42;
+  margin-bottom: 72px;
 
   
   }
@@ -336,6 +340,11 @@ margin: auto;
   }
   .team-item {
     margin-right: 24px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+ 0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
   }
 .team-item:nth-child(4n) {
     margin-right: 0;
@@ -352,7 +361,6 @@ margin: auto;
   letter-spacing: 0.02em;
   /* NAVY BLUE */
   color: #2E2F42;
-
  margin-bottom: 8px;
   }
   .team-title {
@@ -370,7 +378,7 @@ margin: auto;
   
 }
 .team-text {
-    padding: 32px 16px;
+    padding: 32px 0 ;
 }
 
 /*------------------ PORTFOLIO --------------------*/
@@ -400,6 +408,7 @@ line-height: var(--lh-header-text);
 letter-spacing: 0.02em;
 /* SLATE */
 color: var(--text-color,#434455);
+padding-bottom: 32px;
 }
 
 /*------------------ PORTFOLIO - HERO --------------------*/
@@ -407,24 +416,32 @@ color: var(--text-color,#434455);
 
 .portfolio-hero {
     text-align: center;
-    padding: 96px 72px;
+    margin-bottom: 72px ;
+    margin-top: 96px;
+    
 }
 
 .portfolio-hero-list{
     display: flex;
- justify-content: center;
-    
+   justify-content: center;
 }
 .portfolio-hero-btn {
-   text-align: center;
+   font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+line-height: var(--lh-header-text);
+/* identical to box height, or 150% */
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
     /* CLOUD */
     background: #F4F4FD;
     /* CORNFLOWER */
     border: 1px solid #E7E9FC;
     border-radius: 4px;
  color: #4D5AE5;
- min-width: 69px;
- height: 48px;
  padding: 12px 24px;
  cursor: pointer;
 }
@@ -443,20 +460,22 @@ background-color: var(--btn-background-focus-color)
 
 /*------------------ PPORTFOLIO SLIDES --------------------*/
 .portfolio-slides {
-    text-align: center;
+  
 }
 
 .portfolio-slides-list {
     display: flex;
-    padding-bottom: 48px;
+    flex-wrap: wrap;
+    
 }
 .portfolio-slides-item {
     margin-right: 24px;
     width: 360px;
+    margin-bottom: 48px;
     
 }
 
-.portfolio-slides-list, .portfolio-slides-item:last-child {
+.portfolio-slides-list, .portfolio-slides-item:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -469,6 +488,7 @@ background-color: var(--btn-background-focus-color)
     padding: 100px 0 ;
 }
 .footer-logo { 
+    display: flex;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -491,7 +511,8 @@ background-color: var(--btn-background-focus-color)
 
 
 
-.footer-logo-span {
+.footer-logo-span { 
+color: #FFFFFF  ;
    
 }
 
